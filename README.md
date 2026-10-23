@@ -88,3 +88,16 @@ justice-journey/
 ## 注意事項
 
 所有人物、政策指數、加權分數及模擬情境為教學示例，不代表真實社會調查、法律結論或客觀道德評分。哲學討論應重視理由、反例、權利保障及證據。網站使用系統字型、CSS 與 Emoji 圖示，不需額外圖檔。
+
+
+## PWA 安裝與離線使用（新增）
+
+本專案已加入 `manifest.webmanifest`、`sw.js`、`icons/icon-192.png`、`icons/icon-512.png`。部署時請把整個資料夾的檔案及 `icons/` 子目錄一起上傳，不要只上傳 `index.html`。
+
+1. 將全部檔案放到 GitHub 儲存庫根目錄，並啟用 **Settings → Pages → Deploy from a branch → main / (root)**。
+2. 等待 GitHub Pages 發布 HTTPS 網址，使用 Chrome 或 Edge 開啟，點選頁面「安裝 App」或瀏覽器選單中的「安裝應用程式」。
+3. Android Chrome：瀏覽器選單 →「安裝應用程式」或「加入主畫面」。iPhone Safari：分享 →「加入主畫面」。
+4. 首次連線載入後，靜態教材可離線使用；學習紀錄使用該裝置瀏覽器的 localStorage 儲存，不會跨裝置同步。清除網站資料或解除安裝可能使紀錄消失，請定期匯出。
+5. 發布新版本時，建議同步更新 `sw.js` 的 `CACHE_NAME`（例如 v2）以確保舊快取淘汰。離線快取在首次完整載入及 Service Worker 成功安裝後才生效。
+
+**注意**：PWA 無法在 `file://` 直接安裝，請使用 HTTPS 或 localhost；Notion / Padlet 內嵌瀏覽器通常不提供安裝選項，應以獨立瀏覽器開啟 GitHub Pages 網址。

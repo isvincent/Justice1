@@ -1,0 +1,27 @@
+{
+  "id": "./",
+  "name": "正義：一場思辨之旅｜互動教學與學習平台",
+  "short_name": "正義思辨",
+  "description": "十單元高中哲學、公民倫理互動實驗與探究學習",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f5f7ff",
+  "theme_color": "#5759df",
+  "lang": "zh-Hant",
+  "orientation": "any",
+  "icons": [
+    {
+      "src": "./icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "./icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
